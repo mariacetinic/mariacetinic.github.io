@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <title>Inlämning 2 | nr 1</title>
+</head>
+
+<body>
+    <header>
+        <div id="network">
+            <div id="logo">
+				<div class="logoicon">
+					<a href="index.html"><img class="responsive-icon" src="images/logowhite.png"> </a>
+				</div>
+			</div>
+            <div id="socialmedia">
+				<div class="icon">
+					<a href="https://www.facebook.com/"><img class="responsive-icon" src="socialmedia/png_white/facebook.png"></a>
+				</div>
+				<div class="icon">
+					<a href="https://www.twitter.com/"><img class="responsive-icon" src="socialmedia/png_white/twitter.png"></a>
+				</div>
+				<div class="icon">
+					<a href="https://www.linkedin.com/"><img class="responsive-icon" src="socialmedia/png_white/linkedin.png"></a>
+				</div>
+				<div class="icon">
+					<a href="https://www.instagram.com/"><img class="responsive-icon" src="socialmedia/png_white/instagram.png"></a>
+				</div>
+			</div>
+        </div>
+
+        <div class="menu-btn">
+            <a href="#"><img src="images/menu.png"></a>
+        </div>
+
+   <nav id="big-menu">
+		<ul id="menu-tablet-desktop">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="projects.html">Projects</a></li>
+			<li><a href="contacts.html">Contacts</a></li>
+		</ul>
+	</nav>
+
+		
+	</header>
+
+	<nav id="hamburger-menu">
+		<ul id="menu-mobile">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="projects.html">Projects</a></li>
+			<li><a href="contacts.html">Contacts</a></li>
+		</ul>
+	</nav>
+
+    <div id="bg"></div>
+
+    <article class="description">
+		<h3>Project 2</h3>
+	</article>
+
+    
+    <section class="main">
+        <div class="grid">
+            <div class="cell-video">
+                <video controls>
+                    <source class="responsive-video" src="video/graffiti_karlstad.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <article class="all-project-info">
+                <div class="brand-info">
+                    <h4>Brand</h4>
+                    <ul>
+                        <li>Motion Graphic</li>
+                        <li>Design</li>
+                        <li>Audio</li>
+                    </ul>
+                </div>
+
+                <div class="project-info">
+                    <h4>About</h4>
+                    <p>Bear claw chocolate cake sweet sugar plum. Wafer candy canes tiramisu biscuit sugar plum jelly chupa
+                        chups fruitcake powder. Gummi bears donut chocolate bar sugar plum danish tiramisu cheesecake bonbon
+                        tootsie roll.
+                    </p>
+                </div>
+            </article>
+
+            <div class="cell-project">
+                <a class="box-btn" href="#"><img id="myImg" class="responsive-image" src="images/oldcity.jpeg"></a>
+            </div>
+            <div class="cell-project">
+                <a class="box-btn" href="#"><img class="responsive-image" src="images/partypeople.jpg"></a>
+            </div>
+            <div class="cell-project">
+                <a class="box-btn" href="#"><img class="responsive-image" src="images/rawveg.jpeg"></a>
+            </div>
+            <div class="cell-project">
+                <a class="box-btn" href="#"><img class="responsive-image" src="images/pexels-photo.jpg"></a>
+            </div>
+
+            <!-- lightbox/modal -->
+
+            <div id="myModal" class="modal">
+                
+                <!-- The Close Button -->
+                <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+
+                <!-- Model Content (the image) -->
+                <img class="modal-content" id="img01">
+
+                <!-- Modal Caption (Image Text) --> 
+                <div id="caption"></div>
+
+            </div>
+
+        </div>
+
+        <article class="pagination">
+            <div class="cell-pagination"><a href="projectpage1.html">Back</a></div>
+            <div class="cell-pagination"><a href="projectpage3.html">Next project</a></div>
+        </article>
+
+    </section>
+
+    <footer>
+        <p>© 2016 Joakim Grass</p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

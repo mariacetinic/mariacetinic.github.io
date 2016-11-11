@@ -1,0 +1,619 @@
+/*--------------------------
+------------------
+------- COLOR GUIDE --------
+
+white: #ededed
+whitegray: #aaa
+grey: #333333
+lighter grey: #555555 
+green: #35a79c
+dark green: #009688
+------------------
+----------------------------*/
+
+/*--------------------------
+------------------
+------- GLOBAL STYLES --------
+------------------
+----------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
+
+body{
+    width: 100%;
+    margin: auto;
+    background-color: #ededed;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    letter-spacing: 1px
+}
+
+header{
+    width: 100%;
+    background-color: #333333;
+    display: flex;
+}
+
+footer{
+    background-color: #333333;
+}
+
+footer p{
+    color: #aaa
+}
+
+
+
+
+/*--------------------------
+------------------
+------- NAVIGATION --------
+------------------
+----------------------------*/
+#network{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 0 10px 20px;
+}
+
+nav#hamburger-menu{
+    position: absolute;
+    width: 100%;
+    display: none;
+    z-index: 99;
+}
+
+#menu-mobile{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333333;
+    
+}
+
+#menu-mobile li{
+    display: block;
+    text-align: center;
+    padding: 10px 0 10px 0;
+    border-bottom:1px dotted black;
+}
+
+#menu-mobile li:last-child{
+    border-bottom: none;
+}
+
+#menu-mobile li:first-child{
+    border-top:2px solid black;
+}
+
+#menu-mobile li:hover{
+   background-color: #555555;
+    transition: all .3s ease-in-out;
+}
+
+#menu-mobile a{
+    color: #aaa;
+    transition: all .3s ease-in-out;
+}
+
+#menu-mobile li a:hover{
+    color: #ededed;
+    transition: all .3s ease-in-out;
+}
+
+
+.menu-btn{
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px 10px 0;
+}
+
+.menu-btn img{
+    width: 100%;
+}
+
+#socialmedia{
+    display: flex;
+    flex-flow: wrap;
+    flex-direction: row;
+    max-width: 100%;
+}
+
+.icon{
+    width: 20px;
+    padding: 5px;
+}
+
+.responsive-icon{
+   max-width: 100%; 
+}
+
+.icon img{
+    display: block;
+}
+
+#logo{
+    display: flex;
+    justify-content: center;
+    width: 120px;
+}
+
+.logoicon{
+    width: 40px;
+}
+
+#menu-tablet-desktop{
+    display: none;
+}
+
+
+/*--------------------------
+------------------
+------- TEXT STYLES --------
+------------------
+----------------------------*/
+
+a{
+    text-decoration: none;
+}
+
+p{
+    margin: 0;
+    font-size: 14px;
+    line-height: 20px;
+    color: #555;
+}
+
+section > article{
+    margin-bottom: 20px;
+}
+
+article h4{
+    margin-bottom: 10px;
+}
+
+h3, h4, th{
+    font-weight: 400
+}
+
+
+/*--------------------------
+------------------
+------- IMAGE STYLES --------
+------------------
+----------------------------*/
+
+#bg{
+    background-image: url("../images/citycars.jpg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#bg-contact{
+    background-image: url("../images/partypeople.jpg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*--------------------------
+------------------
+------- IMAGE GALLERY --------
+------------------
+----------------------------*/
+
+.main{
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 1rem 1rem;
+}
+
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.cell-project{
+    width: 98%;
+    padding: 1%; 
+}
+.cell{
+    width: 48%;
+    margin: 1%;
+}
+
+.responsive-image{
+    max-width: 100%;
+}
+
+.cell img{
+    display: block;
+    margin: 1%;
+}
+
+.cell img:hover{
+    opacity: 0.7 ;
+    transition:all 1s ease;
+}
+
+.cell-video{
+    width: 100%;
+}
+
+video{
+    max-width: 98%;
+    padding: 1%;
+}
+
+.responsive-video{
+    display: block;
+}
+/*--------------------------
+------------------
+------- OTHER STYLES --------
+------------------
+----------------------------*/
+
+.description{
+    padding: 4px 0 10px 20px ;
+    background-color: #333333;
+}
+
+.description h4, .description h3{
+    width: 60%;
+    color: #35a79c;
+    font-style: italic;
+}
+
+footer p{
+    padding: 20px;
+}
+
+.brand-info > ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    line-height: 20px;
+    color: #555;
+    font-style: italic;
+}
+
+.project-info, .brand-info{
+    padding: 1%;
+    margin-bottom: 15px;
+}
+
+.pagination{
+    display: flex;
+    justify-content: space-between;
+}
+
+.pagination a{
+    font-size: 14px;
+    color: #555;
+    font-style: italic;
+}
+
+.pagination a:hover{
+    text-decoration: underline;
+    color: #555;
+}
+/*--------------------------
+------------------
+------- LIGHT BOX --------
+------------------
+----------------------------*/
+
+/* Style the Image Used to Trigger the Modal */
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption { 
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/*--------------------------
+------------------
+------- FORMULÄR --------
+------------------
+----------------------------*/
+table{
+    width: 100%;
+    border-spacing: 0;
+}
+
+input[type=text], input[type=submit], textarea{
+    width: 100%;
+}
+
+input[type=text], select{
+    border-radius: 3px;
+    border: none;
+    padding: 10px 10px;
+    display: inline-block;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    
+}
+
+input[type=text]:focus{
+    border:1px solid #35a79c;
+}
+
+:focus {
+    outline: none;
+}
+
+input[type=submit]{
+    width: 100%;
+    float: right;
+    padding: 14px;
+    cursor: pointer;
+    background-color: #35a79c;
+    border: none;
+    border-radius: 3px;
+    text-transform: uppercase;
+    color: #ededed;
+    letter-spacing: 1.5px;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+}
+
+input[type=submit]:hover{
+    background-color: #009688;
+}
+
+
+textarea{
+    border:none;
+    padding: 10px 10px;
+    resize: none;
+    box-sizing: border-box;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+
+textarea:focus{
+    border:1px solid #35a79c;
+}
+
+th{
+    padding-bottom: 10px;
+}
+
+
+td{
+    font-size: 12px;
+    padding-bottom: 2px;
+    color: #555;
+}
+
+.info-contact{
+    margin-bottom: 20px;
+}
+
+/*--------------------------
+------------------
+------- MEDIA QUERYS --------
+------------------
+----------------------------*/
+
+@media all and (min-width:600px){
+
+header{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    justify-content: space-between;
+}
+
+#network{
+    width: 40%;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#logo{
+    width: 70px;
+}
+
+.menu-btn{
+    display: none;
+}
+
+#big-menu{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+
+#menu-tablet-desktop{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    
+    align-items: center;
+    height: 100%;
+   
+}
+
+#menu-tablet-desktop li{
+    display: flex;
+     height: 100%;     
+}
+
+
+#menu-tablet-desktop li a{
+    color: #aaa;
+    padding: 1.2em;
+}
+
+#menu-tablet-desktop li:hover{
+    background-color: #555555;
+    transition: all .3s ease-in-out;
+}
+
+#menu-tablet-desktop li a:hover{
+    color: #ededed;
+    transition: all .3s ease-in-out;
+}
+
+.all-project-info{
+    display: flex;
+    justify-content: space-around
+}
+
+.brand-info{
+    border-right:1px dotted #555;
+    width: 20%;
+}
+
+.project-info{
+    margin-bottom: 15px;
+    width: 50%;
+}
+
+.aboutInfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.aboutMe{
+    width: 50%;
+}
+
+.info-contact{
+    margin-bottom: 0px;
+    border-right:1px dashed #555;
+    padding: 1%;
+        width: 20%;
+}
+.form-cell{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+form{
+    width: 60%;
+}
+}
+
+
+@media all and (min-width:800px){
+
+.main{
+    max-width: 80%;
+}
+
+#big-menu{
+    justify-content: flex-end;
+}
+
+}
+
+@media all and (min-width:1080px){
+
+.cell {
+    width: 30%;
+}
+
+}
+
+@media all and (min-width:1450px){
+    
+.cell {
+    width: 20%;
+}
+
+}
