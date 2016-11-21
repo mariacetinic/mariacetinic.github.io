@@ -59,6 +59,10 @@ footer p{
     margin-bottom: 80px;
 }
 
+.fixed img{
+    width: 30px;
+}
+
 /*--------------------------
 ------------------
 ------- NAVIGATION --------
