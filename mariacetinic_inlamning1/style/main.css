@@ -1,0 +1,696 @@
+/*
+-----------
+----------------
+-----------------------
+COLOR GUIDE
+
+white: #ffffff
+lightgrey: #f8f8fa
+grey: #cccccc
+black: #222222
+-----------------------
+----------------
+-----------
+*/
+
+
+
+/*
+-----------
+----------------
+-----------------------
+------------ GLOBAL STYLES -------------- 
+-----------------------
+----------------
+-----------
+*/
+
+body{
+    margin:auto;
+    color: #222222;
+    font-family: 'Lato', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+}
+
+header{
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+   -webkit-box-shadow: 0px 3px 2px -2px rgba(0,0,0,0.61);
+    -moz-box-shadow: 0px 3px 2px -2px rgba(0,0,0,0.61);
+    box-shadow: 0px 3px 2px -2px rgba(0,0,0,0.61);
+}
+
+main{
+    width: 100%;
+    display: flex;
+    position: relative;
+    margin-top: 63px;
+}
+
+figure{
+    margin: 0; 
+}
+
+section.wrapper{
+    width: 70%;
+    margin: 0;
+    background-color: #ffffff;
+    padding:20px;
+}
+
+.recentprojects{
+    display: flex;
+    padding-bottom: 20px;  
+}
+
+.recentprojects figure{
+    background-color: #000000;
+}
+
+.text-content{
+    background-color: #ffffff;
+    padding-left: 30px;
+    width: 100%;
+
+}
+
+.text-content a{
+    color: grey;
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/*
+-----------
+----------------
+-----------------------
+------------ FONTS -------------- 
+-----------------------
+----------------
+-----------
+*/
+
+p{
+    line-height: 20px;
+    font-weight: 300;
+}
+
+h1, h2, h3, h4{
+    text-transform: uppercase;
+    font-weight: 200;
+    margin-bottom: 12px;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1px;
+}
+
+::selection{
+    color: #ffffff;
+    background-color: #222222;
+}
+
+p.info{
+    font-weight: 400;
+}
+
+/*
+-----------
+----------------
+-----------------------
+------------ MAIN MENU NAVIGATION STYLE -------------- 
+-----------------------
+----------------
+-----------
+*/
+
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;   
+}
+
+nav ul{
+    list-style-type: none;
+    margin:0;
+    padding-right: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+nav ul li{
+    display: inline-block;
+    padding-right:10px;
+}
+
+nav ul li a{
+    text-transform: uppercase;
+}
+
+/*
+-----------
+----------------
+-----------------------
+------------ GLOBAL LINKS STYLE -------------- 
+-----------------------
+----------------
+-----------
+*/
+
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: #222222;
+}
+
+
+a:hover{
+    text-decoration: underline;
+}
+
+a:active{
+   text-decoration: underline; 
+}
+
+/*
+-----------
+----------------
+-----------------------
+------------ LOGOTYPE STYLE -------------- 
+-----------------------
+----------------
+-----------
+*/
+
+#logo img{
+    width: 10%;
+    padding: 10px 10px 10px 20px;
+}
+
+/*
+-----------
+----------------
+-----------------------
+------------ ASIDE STYLE -------------- 
+-----------------------
+----------------
+-----------
+*/
+
+.asideprojekt figure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+aside{
+    width:30%;
+    background-color: #f8f8fa;
+    padding: 20px;
+}
+
+aside figure img{
+    width: 60%;
+    border-radius: 50%;
+}
+
+article ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+article ul li{
+    display: block;
+    height: 30px;
+}
+
+/*
+-----------
+----------------
+-----------------------
+------------ PROJECT PAGES STYLE -------------- 
+-----------------------
+----------------
+-----------
+*/
+
+/* Galleri */
+
+.projectimages{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #ffffff
+}
+
+.projectimages figure{
+    width: 45%;
+    flex: auto;
+    margin: .5vw
+}
+
+.projectimages figcaption{
+    padding-bottom: 5px
+}
+
+.recentprojects figure img{
+    width: 100%;
+    height: auto;
+    display: block; 
+}
+
+.projectimages img{
+    width: 100%;
+}
+
+figcaption{
+    text-transform: uppercase;
+    font-weight: 200;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+/* Enskild projektsida */
+
+
+.about-project{
+    display: flex;
+    margin: .5vw;
+}
+
+section.image-content-page, article.content-project img{
+    width: 100%;
+    display: block;
+    height: 100%;
+}
+
+.text-content-page{
+    background-color: #ffffff;
+    padding-left: 30px;
+    width: 100%;
+}
+
+p.excerpt{
+    display: block;
+    border-top: 1px solid #cccccc;
+    padding-top: 10px;
+    font-weight: 300;
+}
+
+.several-images-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.several-images-content figure{
+    margin: .5vw
+}
+
+/*OLIKA GALLERIER TILL OLIKA PROJEKTSIDOR*/
+
+.several-images-content-gallery2{
+    display: flex;
+    flex-flow: wrap;
+}
+
+
+.several-images-content-gallery2 figure{
+    flex: auto; 
+    width: 300px; 
+    margin: .5vw; 
+}
+
+.several-images-content-gallery2 img{
+    width: 100%; 
+}
+
+.several-images-content-gallery3{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: space-between;
+    height: 600px;
+
+     
+}
+
+.several-images-content-gallery3 figure{
+   width: 45%;
+   margin: 0.5vw
+}
+
+.several-images-content-gallery4{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: space-around;
+    height: 500px;
+}
+
+.several-images-content-gallery4 figure{
+    width: 30%;
+    margin: .5vw
+}
+
+.several-images-content-gallery4 figure img{
+    display: block;
+    height: 100%;
+}
+
+
+
+/*
+-----------
+----------------
+-----------------------
+------------ FORMULÄR -------------- 
+-----------------------
+----------------
+-----------
+*/
+
+article.formular{
+    background-color: #f8f8fa;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+form{
+    width: 70%;
+}
+
+input[type=text]{
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    margin: 10px 0 10px 0;
+}
+
+th{ 
+    padding-bottom: 40px;
+}
+
+input[type=submit]{  
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    border: 0;
+    border: 1px solid #222222;
+}
+
+input[type=submit]:hover{
+    background-color: #f7f7f7;
+}
+
+textarea{
+    width: 100%;
+    height: 100px;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+/*
+-----------
+----------------
+-----------------------
+------------ GLOBAL FOOTER STYLE -------------- 
+-----------------------
+----------------
+-----------
+*/
+
+footer figure img{
+    width:32px;  
+}
+
+footer{
+    background-color: #ffffff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #222222;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    align-items: center;
+}
+
+/*
+-----------
+----------------
+-----------------------
+------------ MEDIA QUERY -------------- 
+-----------------------
+----------------
+-----------
+*/
+
+/*---------------     TABLET DEVICE   -----------------*/
+
+@media all and (max-width: 1000px){
+
+main{
+    flex-direction: column;
+    background-color: #ffffff;
+}
+
+.recentprojects{
+    display: flex;
+    padding-bottom: 20px;
+    flex-direction: row;  
+}
+
+.recentprojects section {
+    width: 80%;
+    margin: 0
+}
+
+section.wrapper{
+    width: 80%;
+    margin: 0 auto;
+    
+}
+
+.about-project{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+aside{
+    width: 100%;
+    margin: 0 auto;
+    order: 2;
+    padding: 20px 0 0 0;
+
+}
+
+.asideprojekt{
+    width: 60%;
+    margin: 0 auto;
+}
+
+.text-content{
+    padding-left: 30px;
+    width: 40%;
+}
+
+.image-content{
+    width: 50%;
+}
+
+.several-images-content-gallery4{
+    height: auto;
+    align-content: flex-start
+}
+
+}
+
+/*---------------     MOBILE DEVICE   -----------------*/
+
+
+@media all and (max-width: 800px){
+
+.several-images-content-gallery3{
+    flex-flow: row wrap;
+    align-content: flex-start;
+    height: auto;
+}
+
+.several-images-content-gallery4{
+    flex-flow: wrap;
+}
+
+.several-images-content-gallery4 figure{
+    flex: auto;
+}
+
+section.image-content-page{
+    width: 100%;
+}
+
+.text-content{
+    padding-left: 0;
+}
+
+.text-content-page{
+    width: 80%;
+}
+
+.recentprojects section {
+    width: 100%;
+    margin: 0
+}
+
+.image-content-page{
+    width: 100%;
+}
+
+main{
+    margin-top: 175px;
+    flex-direction: column;
+    background-color: #ffffff;
+}
+
+.recentprojects{
+    display: flex;
+    padding-bottom: 20px;
+    flex-direction: column;  
+}
+
+section.wrapper{
+    width: 80%;
+    margin: 0 auto;  
+}
+
+#logo{
+    text-align: center;
+}
+
+aside{
+    width: 100%;
+    margin: 0 auto;
+    order: 2;
+
+}
+
+.asideprojekt{
+    width: 60%;
+    margin: 0 auto;
+}
+
+.asideprojekt figure{
+    padding-top: 20px;
+}
+
+.projectimages{
+    flex-direction: column;
+}
+
+.projectimages figure{
+    width: 100%;
+}
+
+header{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: center
+}
+
+
+#logo img{
+    width: 7%;
+    padding-bottom: 5px;
+}
+
+nav ul{
+    padding:0;
+    width: 100%;
+}
+
+nav ul li{
+    display: block;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul li a{
+    text-transform: uppercase;
+}
+
+nav ul li:hover{
+    background-color: #f8f8fa;
+}
+
+}
+
+@media all and (max-width: 500px){ /*kan även skriva @media screen and (min/max-width: 500px){}*/
+
+.several-images-content-gallery3{
+    flex-flow: column wrap;
+}
+
+.several-images-content-gallery3 figure{
+    width: 100%;
+}
+
+.several-images-content-gallery4{
+    flex-direction: column;
+}
+
+.several-images-content-gallery4 figure{
+    width: 100%;
+}
+
+.several-images-content-gallery{
+    padding: O
+}
+
+
+.several-images-content-gallery figure{
+   margin: 0;
+}
+
+
+footer{
+        justify-content: none;
+        flex-direction: column;
+        padding-top: 20px;
+    }
+
+footer figure{
+        margin-top: 15px;
+    }
+}
+
+
