@@ -34,6 +34,10 @@ header{
     width: 100%;
     background-color: #333333;
     display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+
 }
 
 footer{
@@ -71,15 +75,17 @@ footer p{
 #network{
     width: 100%;
     display: -webkit-box;
-display: -moz-box;
-display: -ms-flexbox;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
-    -webkit-align-items: center;
--moz-align-items: center;
     align-items: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    flex-direction: column;
     -webkit-flex-direction: column;
--moz-flex-direction: column;
-   flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
     padding: 10px 0 10px 20px;
 }
 
@@ -114,7 +120,7 @@ nav#hamburger-menu{
 }
 
 #menu-mobile li:hover{
-   background-color: #555555;
+    background-color: #555555;
     transition: all .3s ease-in-out;
 }
 
@@ -132,15 +138,17 @@ nav#hamburger-menu{
 .menu-btn{
     width: 20px;
     display: -webkit-box;
-display: -moz-box;
-display: -ms-flexbox;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
+    justify-content: center;
     -webkit-justify-content: center;
     -moz-justify-content: center;
-    justify-content: center;
+    -ms-justify-content: center;
+    align-items: center;
     -webkit-align-items: center;
     -moz-align-items: center;
-    align-items: center;
+    -ms-align-items: center;
     padding: 10px 20px 10px 0;
 }
 
@@ -150,15 +158,17 @@ display: -ms-flexbox;
 
 #socialmedia{
     display: -webkit-box;
-display: -moz-box;
-display: -ms-flexbox;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
-    -webkit-flex-flow: wrap;
--moz-flex-flow: wrap;
     flex-flow: wrap;
-    -webkit-flex-direction: row;
--moz-flex-direction: row;
+    -webkit-flex-flow: wrap;
+    -moz-flex-flow: wrap;
+    -ms-flex-flow: wrap;
     flex-direction: row;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
     max-width: 100%;
 }
 
@@ -177,12 +187,13 @@ display: -ms-flexbox;
 
 #logo{
     display: -webkit-box;
-display: -moz-box;
-display: -ms-flexbox;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
-    -webkit-justify-content: center;
--moz-justify-content: center;
     justify-content: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
     width: 120px;
 }
 
@@ -273,15 +284,17 @@ h3, h4, th{
 
 .grid{
     display: -webkit-box;
-display: -moz-box;
-display: -ms-flexbox;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
-    -webkit-flex-wrap: wrap;
--moz-flex-wrap: wrap;
     flex-wrap: wrap;
-    -webkit-flex-direction: row;
--moz-flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
     flex-direction: row;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
 }
 
 .cell-project{
@@ -359,12 +372,13 @@ footer p{
 
 .pagination{
     display: -webkit-box;
-display: -moz-box;
-display: -ms-flexbox;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
     justify-content: space-between;
     -webkit-justify-content: space-between;
--moz-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-display: flex;
 }
 
 .pagination a{
@@ -559,26 +573,32 @@ display: -ms-flexbox;
     display: flex;
     flex-flow: row wrap;
     -webkit-flex-flow: row wrap;
--moz-flex-flow: row wrap;
+    -moz-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
     justify-content: flex-end;
     -webkit-justify-content: flex-end;
--moz-justify-content: flex-end;
+    -moz-justify-content: flex-end;
+    -ms-justify-content: flex-end;
     justify-content: space-between;
     -webkit-justify-content: space-between;
--moz-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
 }
 
 #network{
     width: 40%;
     flex-direction: row;
     -webkit-flex-direction: row;
--moz-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
     justify-content: flex-start;
     -webkit-justify-content: flex-start;
--moz-justify-content: flex-start;
-   align-items: flex-start;
-   -webkit-align-items: flex-start;
--moz-align-items: flex-start;
+    -moz-justify-content: flex-start;
+    -ms-justify-content: flex-start;
+    align-items: flex-start;
+    -webkit-align-items: flex-start;
+    -moz-align-items: flex-start;
+    -ms-align-items: flex-start;
 }
 
 #logo{
@@ -592,15 +612,17 @@ display: -ms-flexbox;
 #big-menu{
     width: 50%;
     display: -webkit-box;
-display: -moz-box;
-display: -ms-flexbox;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
-   justify-content: space-around;
-   -webkit-justify-content: space-around;
--moz-justify-content: space-around;
-align-items: center;
+    justify-content: space-around;
+    -webkit-justify-content: space-around;
+    -moz-justify-content: space-around;
+    -ms-justify-content: space-around;
+    align-items: center;
     -webkit-align-items: center;
--moz-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
    
 }
 
@@ -609,23 +631,25 @@ align-items: center;
     padding: 0;
     list-style-type: none;
     display: -webkit-box;
-display: -moz-box;
-display: -ms-flexbox;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
    flex-flow: row wrap;
    -webkit-flex-flow: row wrap;
--moz-flex-flow: row wrap;
+    -moz-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
     align-items: center;
     -webkit-align-items: center;
--moz-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
     height: 100%;
    
 }
 
 #menu-tablet-desktop li{
     display: -webkit-box;
-display: -moz-box;
-display: -ms-flexbox;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
      height: 100%;     
 }
@@ -648,12 +672,13 @@ display: -ms-flexbox;
 
 .all-project-info{
     display: -webkit-box;
-display: -moz-box;
-display: -ms-flexbox;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
     justify-content: space-around;
     -webkit-justify-content: space-around;
--moz-justify-content: space-around;
+    -moz-justify-content: space-around;
+    -ms-justify-content: space-around;
 }
 
 .brand-info{
@@ -668,15 +693,17 @@ display: -ms-flexbox;
 
 .aboutInfo{
     display: -webkit-box;
-display: -moz-box;
-display: -ms-flexbox;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
     flex-direction: row;
     -webkit-flex-direction: row;
--moz-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
     justify-content: space-around;
     -webkit-justify-content: space-around;
--moz-justify-content: space-around;
+    -moz-justify-content: space-around;
+    -ms-justify-content: space-around;
 }
 
 .aboutMe{
@@ -687,17 +714,18 @@ display: -ms-flexbox;
     margin-bottom: 0px;
     border-right:1px dashed #555;
     padding: 1%;
-        width: 20%;
+    width: 20%;
 }
 .form-cell{
     width: 100%;
     display: flex;
     display: -webkit-box;
-display: -moz-box;
-display: -ms-flexbox;
+    display: -moz-box;
+    display: -ms-flexbox;
     justify-content: center;
     -webkit-justify-content: center;
--moz-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
     margin-top: 50px;
 }
 form{
@@ -715,7 +743,8 @@ form{
 #big-menu{
     justify-content: flex-end;
     -webkit-justify-content: flex-end;
--moz-justify-content: flex-end;
+    -moz-justify-content: flex-end;
+    -ms-justify-content: flex-end;
 }
 
 }
