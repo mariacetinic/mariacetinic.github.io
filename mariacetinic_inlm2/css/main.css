@@ -48,7 +48,7 @@ footer p{
 .fixed{
     border-width: 1px;
     border-radius: 5px;
-    background-color: white;
+    background-color: #ededed;
     border-style: solid;
     position: fixed;
     padding: 5px;
