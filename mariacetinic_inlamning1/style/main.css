@@ -164,9 +164,11 @@ nav{
     justify-content: flex-end;
     -webkit-justify-content: flex-end;
     -moz-justify-content: flex-end;
+    -ms-justify-content: flex-end;
     align-items: center;
     -webkit-align-items: center;
     -moz-align-items: center;   
+    -ms-align-items: center;
 }
 
 nav ul{
@@ -248,9 +250,11 @@ a:active{
     justify-content: center;
     -webkit-justify-content: center;
     -webkit-justify-content: center;
+    -ms-justify-content: center;
     align-items: center;
     -moz-align-items: center;
     -moz-align-items: center;
+    -ms-align-items: center;
 }
 
 aside{
@@ -300,9 +304,11 @@ article ul li{
     flex-wrap: wrap;
     -webkit-flex-wrap: wrap;
     -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
     justify-content: space-around; 
     -webkit-justify-content: space-around;    
     -moz-justify-content: space-around;
+    -ms-justify-content: space-around; 
     background-color: #ffffff
 }
 
@@ -311,6 +317,7 @@ article ul li{
     flex: auto;
     -webkit-flex: auto;
     -moz-flex: auto;
+    -ms-flex: auto;
     margin: .5vw
 }
 
@@ -340,8 +347,8 @@ figcaption{
 
 .about-project{
     display: -webkit-box;
-display: -moz-box;
-display: -ms-flexbox;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
     margin: .5vw;
 }
@@ -368,12 +375,13 @@ p.excerpt{
 .several-images-content{
     width: 100%;
     display: -webkit-box;
-display: -moz-box;
-display: -ms-flexbox;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
     flex-direction: column-reverse;
     -webkit-flex-direction: column-reverse;
--moz-flex-direction: column-reverse;
+    -moz-flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
     
 }
 
@@ -385,19 +393,21 @@ display: -ms-flexbox;
 
 .several-images-content-gallery2{
     display: -webkit-box;
-display: -moz-box;
-display: -ms-flexbox;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
     flex-flow: wrap;
     -webkit-flex-flow: wrap;
--moz-flex-flow: wrap;
+    -moz-flex-flow: wrap;
+    -ms-flex-flow: wrap;
 }
 
 
 .several-images-content-gallery2 figure{
-   flex: auto; 
+    flex: auto; 
     -webkit-flex: auto; 
--moz-flex: auto; 
+    -moz-flex: auto; 
+    -ms-flex: auto; 
     width: 300px; 
     margin: .5vw; 
 }
@@ -408,18 +418,21 @@ display: -ms-flexbox;
 
 .several-images-content-gallery3{
     display: -webkit-box;
-display: -moz-box;
-display: -ms-flexbox;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
     flex-flow: column wrap;
     -webkit-flex-flow: column wrap;
--moz-flex-flow: column wrap;
-   -webkit-justify-content: center;
--moz-justify-content: center;
+    -moz-flex-flow: column wrap;
+    -ms-flex-flow: column wrap;
     justify-content: center;
-    -webkit-align-content: space-between;
--moz-align-content: space-between;
+   -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
     align-content: space-between;
+    -webkit-align-content: space-between;
+    -moz-align-content: space-between;
+    -ms-align-content: space-between;
     height: 600px;
 
      
@@ -432,18 +445,21 @@ display: -ms-flexbox;
 
 .several-images-content-gallery4{
     display: -webkit-box;
-display: -moz-box;
-display: -ms-flexbox;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
     flex-flow: row wrap;
     -webkit-flex-flow: row wrap;
--moz-flex-flow: row wrap;
-justify-content: center;
+    -moz-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    justify-content: center;
     -webkit-justify-content: center;
--moz-justify-content: center;
-align-content: space-around;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    align-content: space-around;
     -webkit-align-content: space-around;
--moz-align-content: space-around;
+    -moz-align-content: space-around;
+    -ms-align-content: space-around;
     height: 500px;
 }
 
@@ -472,12 +488,13 @@ align-content: space-around;
 article.formular{
     background-color: #f8f8fa;
     display: -webkit-box;
-display: -moz-box;
-display: -ms-flexbox;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
-    -webkit-justify-content: center;
--moz-justify-content: center;
     justify-content: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;    
     padding: 20px;
 }
 
@@ -537,19 +554,22 @@ footer{
     background-color: #ffffff;
     padding: 20px;
     display: -webkit-box;
-display: -moz-box;
-display: -ms-flexbox;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
-    -webkit-justify-content: space-between;
--moz-justify-content: space-between;
     justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
     border-top: 1px solid #222222;
     text-transform: uppercase;
     font-size: 13px;
     font-weight: 300;
     letter-spacing: 1px;
+    align-items: center;
     -webkit-align-items: center;
--moz-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
     
 }
 
@@ -568,21 +588,23 @@ display: -ms-flexbox;
 @media all and (max-width: 1000px){
 
 main{
-    -webkit-flex-direction: column;
--moz-flex-direction: column;
     flex-direction: column;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
     background-color: #ffffff;
 }
 
 .recentprojects{
     display: -webkit-box;
-display: -moz-box;
-display: -ms-flexbox;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
     padding-bottom: 20px;
-    -webkit-flex-direction: row;
--moz-flex-direction: row;
     flex-direction: row;  
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
 }
 
 .recentprojects section {
@@ -598,12 +620,13 @@ section.wrapper{
 
 .about-project{
     display: -webkit-box;
-display: -moz-box;
-display: -ms-flexbox;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
-    -webkit-flex-direction: column;
--moz-flex-direction: column;
     flex-direction: column;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
 }
 
 
@@ -632,9 +655,10 @@ aside{
 
 .several-images-content-gallery4{
     height: auto;
-    -webkit-align-content: flex-start;
--moz-align-content: flex-start;
     align-content: flex-start;
+    -webkit-align-content: flex-start;
+    -moz-align-content: flex-start;
+    -ms-align-content: flex-start;
 }
 
 }
@@ -645,25 +669,29 @@ aside{
 @media all and (max-width: 800px){
 
 .several-images-content-gallery3{
-    -webkit-flex-flow: row wrap;
--moz-flex-flow: row wrap;
     flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+    -moz-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    align-content: flex-start;
     -webkit-align-content: flex-start;
 -moz-align-content: flex-start;
-    align-content: flex-start;
+    -ms-align-content: flex-start;
     height: auto;
 }
 
 .several-images-content-gallery4{
-    -webkit-flex-flow: wrap;
--moz-flex-flow: wrap;
     flex-flow: wrap;
+    -webkit-flex-flow: wrap;
+    -moz-flex-flow: wrap;
+    -ms-flex-flow: wrap;
 }
 
 .several-images-content-gallery4 figure{
-    -webkit-flex: auto;
--moz-flex: auto;
     flex: auto;
+    -webkit-flex: auto;
+    -moz-flex: auto;
+    -ms-flex: auto;
 }
 
 section.image-content-page{
@@ -689,9 +717,10 @@ section.image-content-page{
 
 main{
     margin-top: 175px;
-    -webkit-flex-direction: column;
--moz-flex-direction: column;
     flex-direction: column;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
     background-color: #ffffff;
 }
 
@@ -700,7 +729,8 @@ main{
     padding-bottom: 20px;
     flex-direction: column; 
     -webkit-flex-direction: column; 
--moz-flex-direction: column; 
+    -moz-flex-direction: column; 
+    -ms-flex-direction: column;
 }
 
 section.wrapper{
@@ -729,9 +759,10 @@ aside{
 }
 
 .projectimages{
-    -webkit-flex-direction: column;
--moz-flex-direction: column;
     flex-direction: column;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
 }
 
 .projectimages figure{
@@ -740,26 +771,29 @@ aside{
 
 header{
     display: -webkit-box;
-display: -moz-box;
-display: -ms-flexbox;
+    display: -moz-box;
+    display: -ms-flexbox;
     display:flex;
-    -webkit-flex-direction: column;
--moz-flex-direction: column;
     flex-direction: column;
-    -webkit-justify-content: center;
--moz-justify-content: center;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
     justify-content: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
 }
 
 nav{
     width: 100%;
     display: -webkit-box;
-display: -moz-box;
-display: -ms-flexbox;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
-    -webkit-justify-content: center;
--moz-justify-content: center;
     justify-content: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
 }
 
 
@@ -792,9 +826,10 @@ nav ul li:hover{
 @media all and (max-width: 500px){ /*kan även skriva @media screen and (min/max-width: 500px){}*/
 
 .several-images-content-gallery3{
-    -webkit-flex-flow: column wrap;
--moz-flex-flow: column wrap;
     flex-flow: column wrap;
+    -webkit-flex-flow: column wrap;
+    -moz-flex-flow: column wrap;
+    -ms-flex-flow: column wrap;
 }
 
 .several-images-content-gallery3 figure{
@@ -802,9 +837,10 @@ nav ul li:hover{
 }
 
 .several-images-content-gallery4{
-    -webkit-flex-direction: column;
--moz-flex-direction: column;
     flex-direction: column;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
 }
 
 .several-images-content-gallery4 figure{
@@ -822,14 +858,16 @@ nav ul li:hover{
 
 
 footer{
+    justify-content: none;
     -webkit-justify-content: none;
--moz-justify-content: none;
-        justify-content: none;
-        -webkit-flex-direction: column;
--moz-flex-direction: column;
-        flex-direction: column;
-        padding-top: 20px;
-    }
+    -moz-justify-content: none;
+    -ms-justify-content: none;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    padding-top: 20px;
+}
 
 footer figure{
         margin-top: 15px;
