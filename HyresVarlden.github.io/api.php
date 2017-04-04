@@ -1,18 +1,7 @@
 <?php
-
 session_start();
-header('Access-Control-Allow-Origin: *');
-
-$host = 'mysql525.loopia.se';
-$db = 'zocomutbildning_se_db_9';
-$user = 'hyresv@z164682';
-$password = '12hyr3sv4rld3n67';
-$charset = 'utf8';
-$dsn = "mysql:host=$host;dbname=$db;charset=$charset";
-$options = [ PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
-			  PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
-			  PDO::ATTR_EMULATE_PREPARES   => false  ];
-$pdo = new PDO($dsn, $user, $password, $options);
+//header('Access-Control-Allow-Origin: *'); 
+require("config.php");
 
 $user = $_POST['user'];
 $pwd = $_POST['pwd'];
@@ -23,25 +12,18 @@ $statement->execute(array(':user' => $user, ':pwd' => $pwd));
 
 $row = $statement->fetch(PDO::FETCH_ASSOC);
 
-$resultat = [];
+$result = [
+		"user" => false,
+		"pwd" => false
+	];
 
 if (!is_null($row['ID'])) {
 	$_SESSION['ID'] = $row['ID'];
-	$resultat = [
+	$result = [
 		"user" => true,
 		"pwd" => true
 	];
 }
 
-else {
+echo json_encode($result);
 
-	$resultat = [
-		"user" => false,
-		"pwd" => false
-	];
-
-}
-
-echo json_encode($resultat);
-
-?>
