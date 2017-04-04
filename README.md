@@ -1,5 +1,3 @@
 # mariacetinic.github.io
 
-Första sidan till mina senaste projekt. 
-
-test med ändrigar
+Projekt skrivna i html, css och javascript. 
