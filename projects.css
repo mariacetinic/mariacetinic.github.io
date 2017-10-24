@@ -1,0 +1,42 @@
+#project{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+article{
+    margin-bottom: 40px;
+}
+
+h5{
+    margin: 0;
+}
+.atf-content{
+    width: 100%;
+}
+
+.info-project{
+    width: 100%;
+    display: flex;
+}
+
+.left-info{
+    width: 30%;
+}
+
+.right-info{
+    width: 60%;
+    padding-left: 10%;
+}
+
+.image-project{
+    width: 48%;
+    margin-left: .5%;
+    margin-right: .5%;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
