@@ -13,7 +13,7 @@ header{
     display: flex;
     justify-content: space-between;
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 90px;
 }
 
 header ul{
@@ -42,7 +42,7 @@ h1{
     
 }
 
-p{
+footer p{
     padding: 15px 30px 5px 30px;
     margin: 0;
 }
@@ -52,6 +52,10 @@ p{
     font-size: 12px;
     font-family: 'Montserrat', sans-serif;
     
+}
+
+p{
+    line-height: 28px;
 }
 
 a{

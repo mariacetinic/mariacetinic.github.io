@@ -18,13 +18,17 @@ h5{
 .info-project{
     width: 100%;
     display: flex;
-    margin: 1%;
     padding-bottom: 25px;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .left-info{
-    width: 30%;
+    width: 40%;
+    margin-right: 10%;
 }
+
+
 
 .left-info ul{
     padding: 0;
@@ -40,7 +44,6 @@ h5{
 
 .right-info{
     width: 50%;
-    padding-left: 20%;
     font-size: 17px;
     line-height: 25px;
 }
